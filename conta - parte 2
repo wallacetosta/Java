@@ -1,0 +1,53 @@
+public class programa 
+    {
+    //Atributos
+    private int numeroConta;
+    private int agencia;
+    private String correntista;
+    private double saldo;
+    
+    //Construtor
+    public programa (int agencia, int numeroConta, String correntista)
+    {
+        
+        this.agencia = agencia;
+        this.numeroConta = numeroConta;
+        this.correntista = correntista;
+    }
+    //Construtor 2 - com saldo inicial
+    public programa (int agencia, int numeroConta, String correntista, double saldo)
+    {
+        
+        this.agencia = agencia;
+        this.numeroConta = numeroConta;
+        this.correntista = correntista;
+        this.saldo = saldo;
+    }
+    
+    //getters - quando eu quero retornar o valor.
+    public int getAgencia() {
+        return agencia;
+    }
+    public int getNumeroConta () {
+        return numeroConta;
+    }
+    public String getCorrentista () {
+        return correntista;
+    }
+    public double getSaldo () {
+        return saldo;
+    }
+    //setters
+    public void setCorrentista (String correntista)
+    {
+        this.correntista = correntista;
+    }
+    public void saque (double valor)
+    {
+        saldo -= valor;
+    }
+    public void deposito (double valor)
+    {
+        saldo += valor;
+    }
+}
