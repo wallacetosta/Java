@@ -1,0 +1,17 @@
+public class Conta {
+
+
+    public static void main(String[] args) {
+       programa conta1;
+       
+       conta1 = new programa(0001, 1089, "Davi Almeida",200.0);
+       //double saldo = conta.getSaldo();
+       
+        System.out.println(conta1.getAgencia());
+        System.out.println(conta1.getSaldo());
+        System.out.println(conta1.getNumeroConta());
+        System.out.println(conta1.getCorrentista());
+       
+    }
+    
+}
